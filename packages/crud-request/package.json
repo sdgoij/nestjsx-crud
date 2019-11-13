@@ -1,5 +1,5 @@
 {
-  "name": "@nestjsx/crud-request",
+  "name": "@sdgoij/nestjsx-crud-request",
   "description": "NestJs CRUD for RESTful APIs - request query builder",
   "version": "4.3.0-alpha.0",
   "license": "MIT",
