@@ -1,7 +1,7 @@
 {
   "name": "@sdgoij/nestjsx-crud",
   "description": "NestJs CRUD for RESTful APIs",
-  "version": "4.3.0-alpha.0",
+  "version": "4.3.0-alpha.1",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
