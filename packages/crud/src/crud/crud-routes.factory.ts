@@ -9,7 +9,7 @@ import {
   isEqual,
   getOwnPropNames,
   isNil,
-} from '@nestjsx/util';
+} from '@sdgoij/nestjsx-util';
 import * as deepmerge from 'deepmerge';
 
 import { R } from './reflection.helper';

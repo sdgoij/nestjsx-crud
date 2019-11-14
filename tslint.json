@@ -9,7 +9,8 @@
     "member-ordering": false,
     "prefer-for-of": false,
     "no-submodule-imports": false,
-    "interface-name": false
+    "interface-name": false,
+    "max-classes-per-file": false
   },
   "rulesDirectory": []
 }

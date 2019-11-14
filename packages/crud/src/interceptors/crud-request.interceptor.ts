@@ -4,8 +4,8 @@ import {
   Injectable,
   NestInterceptor,
 } from '@nestjs/common';
-import { RequestQueryParser, SCondition, QueryFilter } from '@nestjsx/crud-request';
-import { isNil, isFunction, isArrayFull, hasLength } from '@nestjsx/util';
+import { RequestQueryParser, SCondition, QueryFilter } from '@sdgoij/nestjsx-crud-request';
+import { isNil, isFunction, isArrayFull, hasLength } from '@sdgoij/nestjsx-util';
 
 import { PARSED_CRUD_REQUEST_KEY } from '../constants';
 import { CrudActions } from '../enums';

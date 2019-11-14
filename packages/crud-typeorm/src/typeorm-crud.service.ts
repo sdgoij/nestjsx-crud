@@ -6,7 +6,7 @@ import {
   GetManyDefaultResponse,
   JoinOptions,
   QueryOptions,
-} from '@nestjsx/crud';
+} from '@sdgoij/nestjsx-crud';
 import {
   ParsedRequestParams,
   QueryFilter,
@@ -15,7 +15,7 @@ import {
   SCondition,
   SConditionKey,
   ComparisonOperator,
-} from '@nestjsx/crud-request';
+} from '@sdgoij/nestjsx-crud-request';
 import {
   hasLength,
   isArrayFull,
@@ -24,7 +24,7 @@ import {
   objKeys,
   isNil,
   isNull,
-} from '@nestjsx/util';
+} from '@sdgoij/nestjsx-util';
 import { oO } from '@zmotivat0r/o0';
 import { plainToClass } from 'class-transformer';
 import { ClassType } from 'class-transformer/ClassTransformer';
