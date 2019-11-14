@@ -6,7 +6,7 @@ import {
   GetManyDefaultResponse,
   JoinOptions,
   QueryOptions,
-} from '@nestjsx/crud';
+} from '@sdgoij/nestjsx-crud';
 import {
   ParsedRequestParams,
   QueryFilter,
@@ -15,7 +15,7 @@ import {
   SCondition,
   SConditionKey,
   ComparisonOperator,
-} from '@nestjsx/crud-request';
+} from '@sdgoij/nestjsx-crud-request';
 import {
   hasLength,
   isArrayFull,
@@ -24,7 +24,7 @@ import {
   objKeys,
   isNil,
   isNull,
-} from '@nestjsx/util';
+} from '@sdgoij/nestjsx-util';
 import { plainToClass } from 'class-transformer';
 import { ClassType } from 'class-transformer/ClassTransformer';
 import {
@@ -454,7 +454,10 @@ export class TypeOrmCrudService<T> extends CrudService<T> {
     return found;
   }
 
-  protected prepareEntityBeforeSave(dto: DeepPartial<T>, parsed: CrudRequest['parsed']): T {
+  protected prepareEntityBeforeSave(
+    dto: DeepPartial<T>,
+    parsed: CrudRequest['parsed'],
+  ): T {
     /* istanbul ignore if */
     if (!isObject(dto)) {
       return undefined;

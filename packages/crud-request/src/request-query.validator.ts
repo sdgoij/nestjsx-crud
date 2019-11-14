@@ -1,19 +1,19 @@
 import {
-  isUndefined,
   isArrayStrings,
-  isStringFull,
-  isObject,
   isEqual,
-  isNumber,
   isNil,
-} from '@nestjsx/util';
+  isNumber,
+  isObject,
+  isStringFull,
+  isUndefined,
+} from '@sdgoij/nestjsx-util';
 
 import { RequestQueryException } from './exceptions';
-import { ParamsOptions, ParamOption } from './interfaces';
+import { ParamsOptions } from './interfaces';
 import {
+  ComparisonOperator,
   QueryFields,
   QueryFilter,
-  ComparisonOperator,
   QueryJoin,
   QuerySort,
 } from './types';

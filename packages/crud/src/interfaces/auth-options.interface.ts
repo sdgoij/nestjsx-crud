@@ -1,4 +1,4 @@
-import { ObjectLiteral } from '@nestjsx/util';
+import { ObjectLiteral } from '@sdgoij/nestjsx-util';
 
 export interface AuthGlobalOptions {
   property?: string;

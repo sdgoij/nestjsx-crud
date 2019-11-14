@@ -4,8 +4,8 @@ import {
   Injectable,
   NestInterceptor,
 } from '@nestjs/common';
-import { RequestQueryParser } from '@nestjsx/crud-request';
-import { isIn, isNil, isFunction, isObject } from '@nestjsx/util';
+import { RequestQueryParser } from '@sdgoij/nestjsx-crud-request';
+import { isIn, isNil, isFunction, isObject } from '@sdgoij/nestjsx-util';
 
 import { PARSED_CRUD_REQUEST_KEY } from '../constants';
 import { R } from '../crud/reflection.helper';

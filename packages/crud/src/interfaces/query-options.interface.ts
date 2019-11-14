@@ -3,7 +3,7 @@ import {
   QueryFilter,
   QuerySort,
   SCondition,
-} from '@nestjsx/crud-request/lib/types/request-query.types';
+} from '@sdgoij/nestjsx-crud-request/lib/types/request-query.types';
 
 export interface QueryOptions {
   allow?: QueryFields;

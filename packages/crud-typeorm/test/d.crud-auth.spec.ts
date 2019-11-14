@@ -1,23 +1,23 @@
 import {
+  CanActivate,
   Controller,
+  ExecutionContext,
   INestApplication,
   Injectable,
-  CanActivate,
-  ExecutionContext,
 } from '@nestjs/common';
 import { APP_FILTER, APP_GUARD } from '@nestjs/core';
 import { Test } from '@nestjs/testing';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
-import { Crud, CrudAuth } from '@nestjsx/crud';
+import { Crud, CrudAuth } from '@sdgoij/nestjsx-crud';
 import * as request from 'supertest';
 import { withCache } from '../../../integration/crud-typeorm/orm.config';
+import { Project } from '../../../integration/crud-typeorm/projects';
 import { User } from '../../../integration/crud-typeorm/users';
 import { UserProfile } from '../../../integration/crud-typeorm/users-profiles';
-import { Project } from '../../../integration/crud-typeorm/projects';
 import { HttpExceptionFilter } from '../../../integration/shared/https-exception.filter';
-import { UsersService } from './__fixture__/users.service';
 import { ProjectsService } from './__fixture__/projects.service';
+import { UsersService } from './__fixture__/users.service';
 
 describe('#crud-typeorm', () => {
   describe('#CrudAuth', () => {
