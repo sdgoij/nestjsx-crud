@@ -1,6 +1,6 @@
 import { Controller } from '@nestjs/common';
 import { ApiUseTags } from '@nestjs/swagger';
-import { Crud } from '@nestjsx/crud';
+import { Crud } from '@sdgoij/nestjsx-crud';
 
 import { Project } from './project.entity';
 import { ProjectsService } from './projects.service';

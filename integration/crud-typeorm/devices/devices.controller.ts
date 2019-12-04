@@ -1,6 +1,6 @@
 import { Controller } from '@nestjs/common';
 import { ApiUseTags } from '@nestjs/swagger';
-import { Crud } from '@nestjsx/crud';
+import { Crud } from '@sdgoij/nestjsx-crud';
 
 import { Device } from './device.entity';
 import { DevicesService } from './devices.service';
