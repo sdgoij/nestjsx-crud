@@ -1,11 +1,11 @@
-import { Entity, Column, OneToMany } from 'typeorm';
-import { IsOptional, IsString, MaxLength, IsNotEmpty } from 'class-validator';
+import { CrudValidationGroups } from '@sdgoij/nestjsx-crud';
 import { Type } from 'class-transformer';
-import { CrudValidationGroups } from '@nestjsx/crud';
+import { IsNotEmpty, IsOptional, IsString, MaxLength } from 'class-validator';
+import { Column, Entity, OneToMany } from 'typeorm';
 
 import { BaseEntity } from '../base-entity';
-import { User } from '../users/user.entity';
-import { Project } from '../projects/project.entity';
+import { Project } from '../projects';
+import { User } from '../users';
 
 const { CREATE, UPDATE } = CrudValidationGroups;
 
