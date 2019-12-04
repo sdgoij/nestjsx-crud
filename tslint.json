@@ -10,7 +10,8 @@
     "prefer-for-of": false,
     "no-submodule-imports": false,
     "interface-name": false,
-    "max-classes-per-file": false
+    "max-classes-per-file": false,
+    "ban-types": false
   },
   "rulesDirectory": []
 }

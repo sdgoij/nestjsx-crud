@@ -1,25 +1,24 @@
-import { RequestMethod, HttpStatus } from '@nestjs/common';
+import { HttpStatus, RequestMethod } from '@nestjs/common';
 import { RouteParamtypes } from '@nestjs/common/enums/route-paramtypes.enum';
 import {
-  hasLength,
+  getOwnPropNames,
   isArrayFull,
+  isEqual,
+  isIn,
+  isNil,
   isObjectFull,
   objKeys,
-  isIn,
-  isEqual,
-  getOwnPropNames,
-  isNil,
 } from '@sdgoij/nestjsx-util';
 import * as deepmerge from 'deepmerge';
+import { CrudActions, CrudValidationGroups } from '../enums';
+import { CrudRequestInterceptor } from '../interceptors';
+import { BaseRoute, CrudOptions, CrudRequest, MergedCrudOptions } from '../interfaces';
+import { CrudConfigService } from '../module';
+import { BaseRouteName } from '../types';
 
 import { R } from './reflection.helper';
 import { Swagger } from './swagger.helper';
 import { Validation } from './validation.helper';
-import { CrudRequestInterceptor } from '../interceptors';
-import { BaseRoute, CrudOptions, CrudRequest, MergedCrudOptions } from '../interfaces';
-import { BaseRouteName } from '../types';
-import { CrudActions, CrudValidationGroups } from '../enums';
-import { CrudConfigService } from '../module';
 
 export class CrudRoutesFactory {
   protected options: MergedCrudOptions;
@@ -90,7 +89,7 @@ export class CrudRoutesFactory {
       : {};
     const hasPrimary = this.getPrimaryParam();
     if (!hasPrimary) {
-      this.options.params['id'] = {
+      this.options.params.id = {
         field: 'id',
         type: 'number',
         primary: true,
