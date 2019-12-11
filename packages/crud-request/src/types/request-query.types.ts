@@ -72,7 +72,7 @@ export type ComparisonOperator = DeprecatedCondOperator | keyof SFieldOperator;
 // new search
 export type SPrimitivesVal = string | number | boolean;
 
-export type SFiledValues = SPrimitivesVal | Array<SPrimitivesVal>;
+export type SFiledValues = SPrimitivesVal | SPrimitivesVal[];
 
 export type SFieldOperator = {
   $eq?: SFiledValues;
